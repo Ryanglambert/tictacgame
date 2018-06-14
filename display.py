@@ -19,7 +19,7 @@ def displayBoard(gameState):
     for line in gameState:
            print ('%s  %s | %s | %s ' % (lineNum, line[0], line[1], line[2]))
            print ('  -----------')
-           lineNum ++ 1
+           lineNum += 1
 
 
 # if __name__ == "__main__":
