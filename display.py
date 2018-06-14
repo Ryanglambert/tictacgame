@@ -2,6 +2,8 @@
 
 def displayBoard(gameState):
 
+# please send a 3x3 array with either ' ', 'o', or 'x'
+
 #    a   b   c
 # 1  o |   |
 #   -----------
@@ -10,9 +12,16 @@ def displayBoard(gameState):
 # 3    |   |
 
     # first line is always the same
-    print '   a   b   c'
+    print ('   a   b   c')
+
+    lineNum = 1
 
     for line in gameState:
-		print '    %s' % worker.name
+           print ('%s  %s | %s | %s ' % (lineNum, line[0], line[1], line[2]))
+           print ('  -----------')
+           lineNum ++ 1
 
-		print ''
+
+# if __name__ == "__main__":
+#     testBoard = [[' ','x','o'],[' ',' ',' '],['o','x','o']]
+#     displayBoard(testBoard)
