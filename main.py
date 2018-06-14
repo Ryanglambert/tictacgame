@@ -1,4 +1,5 @@
 import argparse
+import display
 
 
 class TicTacToe(object):
@@ -10,6 +11,11 @@ class TicTacToe(object):
         for x in range(grid_size):
             board.append(["O"] * grid_size)
         return board
+
+    def update_board(self, location, x_o):
+        x, y = location
+        self.board[x][y] = x_o
+        display.displayBoard(self.board)
 
 
 def main():
