@@ -2,7 +2,7 @@ import argparse
 
 
 class TicTacToe(object):
-    def __init__(self, grid_size):
+    def __init__(self, grid_size, starting_player):
         self.board = self.make_board(grid_size)
 
     def make_board(self, grid_size):
@@ -13,10 +13,11 @@ class TicTacToe(object):
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("x")
-    args = parser.parse_args()
-    print(args)
+    #parse stuff here:
+    # give parsed stuff to the class
+    game = TicTacToe()
+    # play the game maybe a while loop
+    # during each while use display.py to update what is shown to the user
 
 
 if __name__ == '__main__':
