@@ -21,6 +21,8 @@ def main():
         display.displayBoard(game.board)
         col, row = input('Please choose a move: (i.e. \'00\')')
         col, row = int(col), int(row)
+        print(col)
+        print(row)
         game.update_board((col, row), player)
         # opponent's move
 
